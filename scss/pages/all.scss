@@ -28,14 +28,28 @@
   margin-top: 1rem;
 }
 
-.content {
-  max-width: 999999px;
+.container-main {
+  display: flex;
+  justify-content: center;
+
+  padding-left: 232px;
+
+
+  .content {
+    width: 100%;
+    margin-right: 0 !important;
+  }
 }
 
 @media (min-width: 1688px) {
+  .container-main {
+    padding-left: 232px !important;
+  }
+
   .content {
-    margin-left: 90px !important;
-    padding: $padding !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    //padding: $padding !important;
   }
 }
 

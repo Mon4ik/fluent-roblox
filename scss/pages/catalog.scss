@@ -1,5 +1,14 @@
 @import "../values";
 
+.content {
+  max-width: unset;
+}
+
+.catalog-container {
+  padding: 0 $padding 0 0;
+}
+
+
 .search-bars {
   border-radius: $border-radius-1 !important;
 
@@ -15,6 +24,7 @@
 .search-bars > * {
   height: 100% !important;
 }
+
 .search-container {
   margin: 0 !important;
 }
@@ -30,6 +40,7 @@
   top: calc($padding * 9) !important;
   height: calc($padding * 3) !important;
 }
+
 .topic-container .topic-carousel {
   display: flex;
   justify-items: center;
@@ -71,7 +82,7 @@
 
 .catalog-container .catalog-results {
   margin-top: $padding !important;
-  width: calc(100% - (160px + $padding * 2)) !important;
+  width: calc(100% - (170px + $padding * 2)) !important;
 }
 
 
