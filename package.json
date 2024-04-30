@@ -2,24 +2,20 @@
   "name": "fluent-roblox",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/main.css",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "node server.js"
-  },
-  "config": {
-    "scssInput": "scss/main.scss",
-    "scssOutput": "css/main.css",
-    "scssConfig": {
-      "style": "compressed"
-    }
+    "build": "gulp",
+    "watch": "gulp watch"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "chokidar": "^3.6.0",
-    "express": "^4.19.2",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-serve": "^1.4.0",
+    "gulp-sourcemaps": "^3.0.0",
     "sass": "^1.75.0"
   }
 }
