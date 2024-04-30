@@ -1,0 +1,99 @@
+@import "../values";
+
+main#container-main {
+  margin-top: 70px;
+}
+
+.rbx-header {
+  padding: 1rem;
+  height: auto !important;
+  backdrop-filter: blur(18px);
+  background-color: rgba(0, 0, 0, .2) !important;
+
+  .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    gap: $padding;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  .navbar-search {
+    position: absolute;
+    width: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(35, 37, 39, .1) !important;
+    margin-top: 0;
+
+    .input-addon-btn {
+      height: calc($padding * 2 + 2px)
+    }
+
+    .clear-search {
+      top: 0;
+      right: calc($padding / 2);
+
+      margin-top: calc($padding / 2 + 1px);
+      margin-bottom: calc($padding / 2);
+    }
+  }
+
+  .input-group #navbar-search-input {
+    padding-bottom: $padding;
+    padding-top: $padding;
+  }
+
+  .rbx-navbar {
+    flex-grow: 1;
+    margin: 0;
+    gap: calc($padding / 2);
+
+    // navbar buttons
+    & > li {
+      flex-grow: 0;
+      border-radius: $border-radius-3;
+
+      a {
+        padding: calc($padding / 2) !important;
+      }
+
+      &:hover {
+        background: rgba($black-7, 60%);
+        border: none !important;
+      }
+    }
+
+    // robux button
+    & > li:nth-child(4) {
+      display: none;
+    }
+  }
+}
+
+
+.rbx-left-col.nav-show {
+  width: calc(175px + $padding * 2);
+}
+
+#header-menu-icon {
+  position: relative;
+  z-index: 1060;
+}
+
+
+#skip-to-main-content {
+  display: none
+}
+
+.alert {
+  top: -60px !important;
+}
+
+.dropdown-menu.new-dropdown-menu {
+  border-radius: $border-radius-2;
+}

@@ -1,0 +1,169 @@
+@import "../../values";
+
+/// Region PRIVATE SERVER ///
+
+#game-instances {
+  padding: 0;
+}
+
+#game-instances .play-with-others-text {
+  display: none;
+}
+
+// no afters and befores
+#game-instances .create-server-banner::before,
+#game-instances .create-server-banner::after {
+  display: none;
+}
+
+#rbx-private-game-server-item-container {
+  display: flex;
+  flex-direction: column;
+  gap: $padding;
+
+  margin: 0;
+}
+
+.rbx-private-game-server-item {
+  height: 300px;
+}
+
+.rbx-private-game-server-item .card-item {
+  border-radius: $border-radius-2 !important;
+  padding: $padding;
+  height: 100%;
+}
+
+
+.rbx-private-game-server-details {
+  background: $black-5;
+
+  border: none !important;
+  border-radius: $border-radius-3 !important;
+  padding: calc($padding / 1.25);
+
+  display: flex;
+  flex-direction: column;
+
+  & > * {
+    margin: 0;
+  }
+
+  button {
+    border-radius: 4px !important;
+  }
+
+  // owner of the server
+  .rbx-private-owner {
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+    margin-top: 8px !important;
+    margin-bottom: auto !important;
+
+    .avatar {
+      height: 64px;
+      width: 64px;
+      margin: 0;
+    }
+
+    .text-name {
+      width: calc(100% - 64px - 0.5rem);
+      display: flex;
+    }
+  }
+
+  // inactive badge on private server
+  .rbx-private-server-inactive {
+    font-size: 16px;
+    text-align: center;
+
+    background: $black-6;
+    border-radius: 4px;
+
+    margin-bottom: 4px !important;
+  }
+
+  .rbx-private-server-subscription-alert {
+    background: rgba(#f74b52, 25%);
+    border-radius: 4px;
+
+    margin-top: 4px !important;
+    margin-bottom: 4px !important;
+  }
+}
+
+
+.rbx-private-game-server-join {
+  margin-top: auto;
+}
+
+#game-instances .create-server-banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+
+  .private-server-price {
+    background: $black-6;
+    padding: .5rem 1.5rem;
+    border-radius: $border-radius-2;
+  }
+
+  .rbx-private-server-create-button {
+    border-radius: $border-radius-2;
+  }
+
+  .rbx-private-server-create-disabled-text {
+    position: absolute;
+    font-size: 12px;
+
+    width: 25%;
+    height: calc(36px + $padding);
+
+    padding: calc($padding / 2);
+    top: calc($padding / -2);
+    right: 0;
+
+    border-radius: $border-radius-3;
+
+    background: rgba($black-6, 75%);
+    backdrop-filter: blur(2px);
+  }
+}
+
+#rbx-private-running-games {
+  margin: 0px !important;
+}
+
+#game-instances .rbx-private-game-server-item .card-item {
+  border-radius: $border-radius-2;
+  margin: 0px !important;
+}
+
+#game-instances .empty-game-instances-container {
+  border-radius: $border-radius-2;
+}
+
+#game-instances .rbx-game-server-item-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: $padding;
+}
+
+#game-instances .rbx-game-server-item {
+  width: auto;
+}
+
+#game-instances .rbx-game-server-item > div {
+  border-radius: $border-radius-2;
+  margin: 0;
+}
+
+#game-instances .rbx-game-server-item .rbx-game-server-join {
+  border-radius: $border-radius-3 !important;
+  padding: calc($padding / 2);
+}

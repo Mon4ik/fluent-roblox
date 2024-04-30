@@ -1,0 +1,90 @@
+@import "../values";
+
+.abp, .rbx-the-hunt-container, .profile-ads-container {
+  display: none;
+}
+
+.home-interleave-divider {
+  display: none;
+}
+
+.game-home-page-container div > .game-sort-header-container ~ .game-sort-header-container {
+  display: none;
+}
+
+.game-home-page-container div .wide-game-tile-carousel:has(li.event-tile) {
+  display: none;
+}
+
+.avatar-card-fullbody .avatar-card-image,
+.avatar-card-fullbody .avatar-card-link,
+.avatar .avatar-card-image,
+.avatar .avatar-card-link {
+  border: none;
+  border-radius: $border-radius-2 !important;
+}
+
+#game-detail-page {
+  margin-top: 1rem;
+}
+
+
+.page-content {
+  max-width: 999999rem;
+}
+
+.btn-control-sm,
+.btn-control-md,
+.btn-buy-md {
+  border-radius: $border-radius-2 !important;
+}
+
+/* card */
+.card-with-game {
+  border-radius: $border-radius-2 !important;
+  backdrop-filter: blur(18px);
+  background-color: rgba(57, 59, 61, .6) !important;
+}
+
+.card-with-game > div {
+  border-color: transparent !important;
+}
+
+.card-with-game > ul {
+  border-radius: $border-radius-2 !important;
+  background-color: $black-5 !important;
+  margin: 8px;
+  width: calc(320px - 8px * 2) !important;
+}
+
+.card-with-game > ul .border-bottom {
+  border-bottom: none !important;
+}
+
+.popover,
+.settings-popover {
+  border-radius: $border-radius-2 !important;
+  height: fit-content;
+  backdrop-filter: blur(18px);
+  background-color: rgba(62, 64, 67, .2) !important;
+}
+
+.popover:not(.card-with-game) ul,
+.dropdown-menu {
+  border-radius: $border-radius-2 !important;
+  height: fit-content;
+  backdrop-filter: blur(18px);
+  background-color: rgba(62, 64, 67, .2) !important;
+}
+
+.dropdown-menu {
+  margin-top: 4px;
+}
+
+.input-group-btn .dropdown-menu li a, .input-group-btn .dropdown-menu li button {
+  padding: 10px 16px !important;
+}
+
+.popover:not(.card-with-game) ul .border-bottom {
+  border-bottom: none !important;
+}

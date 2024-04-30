@@ -1,0 +1,19 @@
+.dark-theme .notification-stream-container .notification-content-view,
+#notification-stream-base-view,
+.notification-stream-body {
+  background-color: transparent !important;
+}
+
+.notification-stream-body {
+  height: fit-content !important;
+}
+
+.dark-theme .new-notification-stream-2022 .notification-stream-container .notification-content-view .notification-stream-body .notification-stream-scrollbar .notification-stream-list {
+  backdrop-filter: blur(18px);
+  background-color: rgba($black-4, .6) !important;
+}
+
+
+.rbx-header .rbx-navbar-right .popover-content {
+  right: -37px !important;
+}

@@ -1,0 +1,70 @@
+@import "../values";
+
+#navigation {
+  z-index: 1040;
+  top: 73px;
+
+  padding: $padding;
+
+  backdrop-filter: blur(18px);
+  background-color: rgba(0, 0, 0, .9) !important;
+}
+
+@media (min-width: 1688px) {
+  #navigation {
+    width: calc(175px + $padding * 2) !important;
+  }
+
+  .catalog-container {
+    padding-left: 2.5rem;
+    padding-right: 0.5rem
+  }
+
+  .container-main {
+    padding-left: 7.5rem;
+    padding-right: 0.5rem
+  }
+}
+
+
+#navigation > ul {
+  padding: calc($padding / 2);
+  background-color: rgba(57, 59, 61, .3);
+  border-radius: calc($border-radius-2 - 5px);
+  backdrop-filter: blur(18px);
+
+  /*     width: calc(100% - 36px - 5px); */
+  /*     float: right; */
+}
+
+#navigation > ul div.font-header-2 {
+  font-weight: 800 !important;
+  font-size: 17px !important;
+}
+
+#navigation > ul li {
+  padding: 0;
+  margin: 0;
+}
+
+#navigation > ul > .rbx-divider {
+  display: none;
+}
+
+#nav-giftcards,
+#nav-shop,
+#nav-blog,
+.rbx-upgrade-now {
+  display: none;
+}
+
+li .dynamic-width-item {
+  display: flex;
+  justify-content: right;
+  justify-items: center;
+}
+
+span.notification-blue {
+  height: 100%;
+  aspect-ratio: 1;
+}

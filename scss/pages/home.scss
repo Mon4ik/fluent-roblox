@@ -1,0 +1,33 @@
+@import "../values";
+
+.content {
+  display: flex;
+  justify-content: center;
+}
+
+.people-list-container {
+  height: calc(190px + $padding * 2);
+}
+
+.people-list-container .section .people-list {
+  border-radius: $border-radius-1;
+
+  background: $black-2;
+  padding: $padding;
+
+  height: calc(133px + $padding * 2);
+  max-height: calc(133px + $padding * 2);
+}
+
+.game-card-thumb-container {
+  border-radius: $border-radius-2;
+}
+
+.friends-count {
+  padding: calc($padding / 4) calc($padding / 2);
+
+  border-radius: 9999px;
+
+  background: $black-5;
+
+}

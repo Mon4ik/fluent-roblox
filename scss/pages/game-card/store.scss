@@ -1,0 +1,77 @@
+/* === Store === */
+#store {
+  padding: 0;
+}
+
+#store #rbx-subscriptions-container {
+  display: none;
+}
+
+#store #rbx-game-passes {
+  padding: $padding;
+  background: $black-5;
+  border-radius: $border-radius-1;
+}
+
+#store .store-cards {
+  justify-content: space-around;
+  justify-items: center;
+
+  display: grid;
+  grid-template-columns: repeat(6, 2fr);
+  grid-gap: $padding;
+}
+
+#store .store-cards:before {
+  visibility: hidden;
+  display: none;
+  height: 0;
+}
+
+#store .store-cards .list-item {
+  width: 100% !important;
+  /*     height: fit-content !important; */
+
+  margin: 0;
+  padding: $padding;
+  border-radius: $border-radius-2;
+  background-color: #393b3d;
+}
+
+#store .store-card {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#store .store-card-caption {
+  padding: 0 !important;
+}
+
+#store .store-card-caption .rbx-gear-passes-purchase {
+  border-radius: var(--border-radius-3) !important;
+}
+
+#store .store-card-caption .store-card-footer:has(h5) {
+  border-radius: var(--border-radius-3) !important;
+  background: var(--black-5);
+}
+
+#store .store-card {
+  margin-right: 0;
+  width: 100%;
+}
+
+#store .store-card .store-card-footer {
+  width: 100%;
+}
+
+
+#store .store-card img {
+  padding-bottom: 0.5rem;
+  width: 100% !important;
+  height: 100% !important;
+}

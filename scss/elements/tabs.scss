@@ -1,0 +1,39 @@
+.nav.nav-tabs::before,
+.nav.nav-tabs::after {
+  display: none;
+}
+
+.nav.nav-tabs {
+  display: grid;
+
+  grid-auto-flow: column;
+  gap: calc($padding / 2);
+
+  padding: calc($padding / 2);
+  //margin-bottom: 18px;
+}
+
+.nav.nav-tabs .rbx-tab {
+  width: 100%;
+}
+
+
+.nav.nav-tabs,
+.nav.nav-tabs .rbx-tab-heading {
+  border-radius: $border-radius-1;
+}
+
+.nav.nav-tabs .rbx-tab .rbx-tab-heading:hover {
+  box-shadow: none;
+  background-color: $black-7;
+}
+
+.nav.nav-tabs .rbx-tab.active > .rbx-tab-heading {
+  box-shadow: none;
+  color: $black-1;
+  background-color: #fff;
+}
+
+.nav.nav-tabs .rbx-tab.active > .rbx-tab-heading > span {
+  color: $black-1;
+}

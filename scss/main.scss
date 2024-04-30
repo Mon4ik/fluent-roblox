@@ -1,0 +1,26 @@
+@import "values";
+
+@import "pages/all";
+
+@import "elements/tabs";
+@import "elements/alerts";
+@import "elements/notifications";
+@import "elements/chat";
+@import "elements/header";
+@import "elements/sidebar";
+
+@import "pages/home";
+
+.settings-container {
+  @import "pages/settings";
+}
+
+.profile-container {
+  @import "pages/profile";
+}
+
+.catalog-container {
+  @import "pages/catalog";
+}
+
+@import "pages/game-card/main";

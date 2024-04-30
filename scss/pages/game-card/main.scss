@@ -1,0 +1,78 @@
+@import "../../values";
+
+/* game card w/ play button */
+#game-details-carousel-container {
+  border-radius: $border-radius-2;
+  width: 900px;
+  height: 400px;
+}
+
+.game-details-carousel-container .carousel-controls {
+  z-index: 10 !important;
+  background-color: rgba(0, 0, 0, .75) !important;
+  backdrop-filter: blur(8px) !important;
+
+  border-radius: $border-radius-2 !important;
+}
+
+.favorite-follow-vote-share {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  padding: $padding;
+  margin-top: 1rem;
+  background-color: $black-5;
+
+  border-radius: $border-radius-2;
+  /*     align-items: end */
+}
+
+.favorite-follow-vote-share > * {
+  width: auto !important;
+}
+
+.btn-primary-md {
+  border-radius: $border-radius-2 !important;
+}
+
+
+.game-buttons-container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.game-main-content {
+  padding: $padding !important;
+  background-color: #393b3d !important;
+  border-radius: $border-radius-1;
+}
+
+.game-calls-to-action {
+  padding-right: 0 !important;
+}
+
+.social-media-share {
+  display: none
+}
+
+.tab-pane.active,
+#running-game-instances-container {
+  display: flex !important;
+  flex-direction: column;
+
+  gap: $padding;
+}
+
+.tab-pane > .ng-scope,
+.game-about-container,
+#rbx-private-servers,
+#rbx-friends-running-games,
+#rbx-running-games {
+  padding: $padding;
+  background: $black-5;
+  border-radius: $border-radius-1;
+}
+
+@import "about";
+@import "store";
+@import "servers";

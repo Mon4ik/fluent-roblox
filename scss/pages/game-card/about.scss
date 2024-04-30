@@ -1,0 +1,113 @@
+@import "../../values";
+
+#about #rbx-private-servers {
+  display: none;
+}
+
+#about .game-about-tab-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  & > div:nth-child(5) {
+    display: none;
+  }
+
+  & > * {
+    background-color: $black-5;
+
+    border-radius: $border-radius-1;
+    padding: $padding;
+    margin: 0 !important;
+  }
+}
+
+
+#about .game-description-container {
+  position: relative;
+
+  .game-age-recommendation-details-container {
+    position: absolute;
+    right: 0;
+    bottom: calc(62.5px + 19.2px + 12px);
+
+    margin-right: $padding;
+    margin-bottom: $padding;
+  }
+
+  .age-rating-details {
+    border-radius: $border-radius-2 !important;
+  }
+
+  .game-stat-container {
+    background-color: $black-6;
+
+    border: none;
+    border-radius: $border-radius-2;
+    padding: $padding;
+  }
+
+  .game-description-footer {
+    display: none;
+  }
+}
+
+// stats (active, favorites, visits, etc)
+#about .game-stats-container {
+  border: 0.5px solid $black-7 !important;
+  border-radius: $border-radius-2;
+
+  background-color: $black-5;
+
+  margin-top: calc($padding * 2);
+
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+
+  &::before,
+  &::after {
+    display: none;
+  }
+
+  .game-stat {
+    width: 100% !important;
+  }
+}
+
+// socials
+#about .game-social-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: calc($padding / 2);
+
+  margin: 0;
+
+  // social link (eg. discord, X)
+  & > * {
+    width: 100%;
+    padding: $padding;
+    margin: 0;
+
+    border: none;
+    border-radius: $border-radius-2;
+    background-color: $black-6;
+
+    .social-icon {
+      border-radius: $border-radius-3;
+    }
+  }
+}
+
+// badges (only border radius)
+#about .badge-row {
+  border-radius: $border-radius-2;
+}
+
+// why
+#about #private-server-container-about-tab {
+  display: none;
+}
+
+#about .games-detail .game-carousel {
+  margin-bottom: 0;
+}

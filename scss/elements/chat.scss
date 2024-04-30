@@ -1,0 +1,21 @@
+.chat-main {
+  backdrop-filter: blur(18px);
+  background-color: rgba(57, 59, 61, .6) !important;
+
+  overflow: hidden;
+  border-radius: $border-radius-2 $border-radius-2 0 0;
+  box-shadow: none;
+}
+
+.chat-search-input:focus {
+  outline: none;
+}
+
+.chat-search {
+  margin: 8px;
+}
+
+.chat-friends li {
+  backdrop-filter: blur(18px);
+  background-color: rgba(45, 47, 49, .2) !important;
+}

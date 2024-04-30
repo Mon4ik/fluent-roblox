@@ -1,0 +1,112 @@
+@import "../values";
+
+.search-bars {
+  border-radius: $border-radius-1 !important;
+
+  height: 105px;
+  top: calc($padding * 5) !important;
+  padding: calc($padding * 1.5) calc($padding * 2) !important;
+  background: #2d2f31cc !important;
+  backdrop-filter: blur(6px);
+
+  z-index: 500 !important;
+}
+
+.search-bars > * {
+  height: 100% !important;
+}
+.search-container {
+  margin: 0 !important;
+}
+
+.topic-container {
+  border-radius: $border-radius-1;
+  background: #212223dd !important;
+  backdrop-filter: blur(6px);
+
+  margin: 0px $padding;
+
+  padding: 0 !important;
+  top: calc($padding * 9) !important;
+  height: calc($padding * 3) !important;
+}
+.topic-container .topic-carousel {
+  display: flex;
+  justify-items: center;
+
+  width: 100%;
+  gap: 5px;
+  height: 100% !important;
+  padding: calc($padding / 2);
+}
+
+.topic-carousel > span {
+  background: $black-6 !important;
+  height: auto !important;
+  margin: 0 !important;
+}
+
+.topic-navigation-button {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: calc($padding * 3) !important;
+}
+
+.topic-container .topic-navigation-blur-left {
+  position: absolute;
+  left: 0;
+  mask-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 25%);
+}
+
+.topic-container .topic-navigation-blur-right {
+  position: absolute;
+  right: 0;
+  mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 25%);
+}
+
+.topic-container .topic-navigation-blur-left,
+.topic-container .topic-navigation-blur-right {
+  backdrop-filter: blur(3px);
+}
+
+.catalog-container .catalog-results {
+  margin-top: $padding !important;
+  width: calc(100% - (160px + $padding * 2)) !important;
+}
+
+
+.search-options {
+  border-radius: $border-radius-1;
+
+  margin-top: $padding !important;
+  top: calc(104px + $padding * 6) !important;
+  width: calc(160px + $padding * 2) !important;
+}
+
+#search-options {
+  position: static;
+  padding: $padding;
+  background: $black-5;
+}
+
+#search-options > form,
+#search-options .border-bottom {
+  border: none;
+}
+
+#search-options .category-section {
+  margin: 0 !important;
+}
+
+.shopping-cart-modal-container {
+  z-index: 1100 !important;
+}
+
+.item-card-thumb-container {
+  overflow: hidden;
+  border-radius: $border-radius-2 !important;
+}
+
+.add-to-cart-btn-container > * {
+  border-radius: $border-radius-3 !important;
+}
