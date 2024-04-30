@@ -28,6 +28,17 @@
   margin-top: 1rem;
 }
 
+.content {
+  max-width: 999999px;
+}
+
+@media (min-width: 1688px) {
+  .content {
+    margin-left: 90px !important;
+    padding: $padding !important;
+  }
+}
+
 
 .page-content {
   max-width: 999999rem;

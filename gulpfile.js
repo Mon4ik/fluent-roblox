@@ -14,7 +14,7 @@ function build(cb) {
         .pipe(sourcemaps.init())
         .pipe(sass({outputStyle: "compressed"}).on('error', sass.logError))
         .pipe(sourcemaps.write('.'))
-        .pipe(dest("dist/"))
+        .pipe(dest("dist"))
 }
 
 exports.build = build;

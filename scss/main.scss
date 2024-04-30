@@ -9,7 +9,9 @@
 @import "elements/header";
 @import "elements/sidebar";
 
-@import "pages/home";
+body:has(.home-container) {
+  @import "pages/home";
+}
 
 .settings-container {
   @import "pages/settings";
@@ -19,8 +21,12 @@
   @import "pages/profile";
 }
 
-.catalog-container {
+body:has(.catalog-container) {
   @import "pages/catalog";
+}
+
+body:has(#item-container) {
+  @import "pages/catalog-item";
 }
 
 @import "pages/game-card/main";
