@@ -1,0 +1,24 @@
+@import "../values";
+
+.popover {
+  border-radius: $border-radius-2 !important;
+  height: fit-content;
+  backdrop-filter: blur(18px);
+  background-color: rgba(62, 64, 67, .2) !important;
+
+  .popover-content > div {
+    background: transparent !important;
+
+  }
+
+  .dropdown-menu {
+    border-radius: $border-radius-2 !important;
+    height: fit-content;
+    backdrop-filter: blur(12px);
+    background-color: rgba($black-4, .8) !important;
+  }
+
+  .arrow, .arrow::after {
+    border-bottom-color: rgba($black-4, .8) !important;
+  }
+}

@@ -84,31 +84,3 @@
 .card-with-game > ul .border-bottom {
   border-bottom: none !important;
 }
-
-.popover,
-.settings-popover {
-  border-radius: $border-radius-2 !important;
-  height: fit-content;
-  backdrop-filter: blur(18px);
-  background-color: rgba(62, 64, 67, .2) !important;
-}
-
-.popover:not(.card-with-game) ul,
-.dropdown-menu {
-  border-radius: $border-radius-2 !important;
-  height: fit-content;
-  backdrop-filter: blur(18px);
-  background-color: rgba(62, 64, 67, .2) !important;
-}
-
-.dropdown-menu {
-  margin-top: 4px;
-}
-
-.input-group-btn .dropdown-menu li a, .input-group-btn .dropdown-menu li button {
-  padding: 10px 16px !important;
-}
-
-.popover:not(.card-with-game) ul .border-bottom {
-  border-bottom: none !important;
-}
