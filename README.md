@@ -11,9 +11,14 @@ Perfect UI for Roblox
 
 ## Installation
 
-### Userstyle extensions
-- Install Stylus (or any other userstyle extension)
-- Create new style for URLs, starting with `https://www.roblox.com/` with this code:
+### Userstyles.world
+
+- https://userstyles.world/style/16043/fluent-roblox
+
+### Manual
+
+- Create custom style (with any userstyle extension)
+- Place this code for domain `www.roblox.com`
   ```css
-  @import url("https://fluent-roblox.idkncc.ru/main.css");
+  @import url("https://fluent-roblox.idkncc.ru/main.css?v=1.0.1");
   ```
