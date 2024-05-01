@@ -8,17 +8,25 @@
 
   .popover-content > div {
     background: transparent !important;
-
-  }
-
-  .dropdown-menu {
-    border-radius: $border-radius-2 !important;
-    height: fit-content;
-    backdrop-filter: blur(12px);
-    background-color: rgba($black-4, .8) !important;
   }
 
   .arrow, .arrow::after {
     border-bottom-color: rgba($black-4, .8) !important;
+  }
+}
+
+.dropdown-menu {
+  border-radius: $border-radius-2 !important;
+  height: fit-content;
+  backdrop-filter: blur(12px);
+  background-color: rgba($black-4, .8) !important;
+}
+
+.input-group-btn:has(.dropdown-menu) {
+  .dropdown-menu {
+    margin-top: 8px;
+    width: 50%;
+    left: auto !important;
+    right: 38px !important;
   }
 }

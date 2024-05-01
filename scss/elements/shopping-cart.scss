@@ -1,0 +1,33 @@
+@import "../values";
+
+.shopping-cart-modal {
+  backdrop-filter: blur(12px);
+  background: rgba($black-5, 90%) !important;
+  border-radius: $border-radius-2 !important;
+
+  .shopping-cart-title-container {
+    padding: $padding $padding 0 !important;
+
+    .shopping-cart-title {
+      border-bottom: none !important;
+    }
+  }
+
+  .shopping-cart-items-list {
+    padding: calc($padding / 2) $padding !important;
+  }
+
+  .shopping-cart-footer {
+    padding: calc($padding / 2) $padding $padding !important;
+
+    & > *,
+    & > * button {
+      border-radius: $border-radius-3 !important;
+    }
+
+    .cart-total-section-container {
+      background: $black-4;
+      padding: calc($padding / 3) !important;
+    }
+  }
+}

@@ -10,6 +10,8 @@
 @import "elements/header";
 @import "elements/sidebar";
 
+@import "elements/shopping-cart";
+
 body:has(.home-container) {
   @import "pages/home";
 }

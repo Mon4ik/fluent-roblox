@@ -8,7 +8,7 @@
   padding: 0 $padding 0 0;
 }
 
-
+// "header" at the top (Marketplace title, search, filters, cart)
 .search-bars {
   border-radius: $border-radius-1 !important;
 
@@ -19,72 +19,96 @@
   backdrop-filter: blur(6px);
 
   z-index: 500 !important;
+
+  & > * {
+    height: 100% !important;
+  }
+
+
+  .search-container {
+    margin: 0 !important;
+
+    div > input,
+    div > button {
+      margin-right: $padding !important;
+    }
+
+    // useless button
+    // we have 3 buy robux buttons:
+    //  - navbar top left option
+    //  - navbar top right button w/ robux
+    //  - catalog button "Buy Robux"
+    .buy-robux {
+      display: none !important;
+    }
+
+    .category-options .dropdown-menu li {
+      width: 50% !important;
+    }
+  }
 }
 
-.search-bars > * {
-  height: 100% !important;
+.catalog-results {
+  margin-top: $padding !important;
+  width: calc(100% - (170px + $padding * 2)) !important;
 }
 
-.search-container {
-  margin: 0 !important;
-}
+//.dropdown
 
+// "tags"
 .topic-container {
   border-radius: $border-radius-1;
   background: #212223dd !important;
   backdrop-filter: blur(6px);
 
   margin: 0 $padding;
-
   padding: 0 !important;
-  top: calc($padding * 9) !important;
+
+  top: calc($padding * 11) !important;
   height: calc($padding * 3) !important;
+
+  z-index: 200 !important;
+
+  .topic-carousel {
+    display: flex;
+    justify-items: center;
+
+    width: 100%;
+    gap: 5px;
+    height: 100% !important;
+    padding: calc($padding / 2);
+
+    & > span {
+      background: $black-6 !important;
+      height: auto !important;
+      margin: 0 !important;
+    }
+  }
+
+  // left && right button
+  .topic-navigation-button {
+    margin: 0 !important;
+    padding: 0 !important;
+    height: calc($padding * 3) !important;
+  }
+
+  .topic-navigation-blur-left {
+    position: absolute;
+    left: 0;
+    mask-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 25%);
+  }
+
+  .topic-navigation-blur-right {
+    position: absolute;
+    right: 0;
+    mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 25%);
+  }
+
+  .topic-navigation-blur-left,
+  .topic-navigation-blur-right {
+    backdrop-filter: blur(3px);
+  }
 }
-
-.topic-container .topic-carousel {
-  display: flex;
-  justify-items: center;
-
-  width: 100%;
-  gap: 5px;
-  height: 100% !important;
-  padding: calc($padding / 2);
-}
-
-.topic-carousel > span {
-  background: $black-6 !important;
-  height: auto !important;
-  margin: 0 !important;
-}
-
-.topic-navigation-button {
-  margin: 0 !important;
-  padding: 0 !important;
-  height: calc($padding * 3) !important;
-}
-
-.topic-container .topic-navigation-blur-left {
-  position: absolute;
-  left: 0;
-  mask-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 25%);
-}
-
-.topic-container .topic-navigation-blur-right {
-  position: absolute;
-  right: 0;
-  mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 25%);
-}
-
-.topic-container .topic-navigation-blur-left,
-.topic-container .topic-navigation-blur-right {
-  backdrop-filter: blur(3px);
-}
-
-.catalog-container .catalog-results {
-  margin-top: $padding !important;
-  width: calc(100% - (170px + $padding * 2)) !important;
-}
-
 
 .search-options {
   border-radius: $border-radius-1;
