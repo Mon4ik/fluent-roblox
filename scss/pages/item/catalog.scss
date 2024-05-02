@@ -1,0 +1,69 @@
+@import "../../values";
+
+.section-content {
+  padding: $padding;
+  border-radius: $border-radius-1;
+  background: $black-5;
+}
+
+.item-details-thumbnail-container {
+  border-radius: $border-radius-2;
+  background: $black-4;
+
+  .thumbnail-holder {
+    background: transparent;
+  }
+
+  .thumbnail-button-container {
+    button {
+      border-radius: $border-radius-2;
+      backdrop-filter: blur(12px);
+      background: rgba($black-5, 60%);
+
+      border: none;
+      padding: calc($padding / 2) $padding !important;
+    }
+  }
+}
+
+.item-details-info-content {
+  & > * {
+    width: calc(100% - 420px - $padding);
+    float: right !important;
+
+    margin-left: $padding;
+    border: none;
+
+    padding: $padding;
+    border-radius: $border-radius-2;
+    background: $black-4;
+  }
+
+  .item-details-info-header {
+    .right {
+      margin-right: calc(30px + $padding);
+    }
+  }
+}
+
+#item-context-menu {
+  button {
+    top: calc($padding * 2 + 12px);
+    right: calc($padding * 2);
+  }
+}
+
+.recommendations-container {
+  padding: $padding;
+  border-radius: $border-radius-1;
+  background: $black-5;
+
+  ul > li {
+    .thumbnail-2d-container,
+    .item-card-thumb-container,
+    .item-card-thumb-container::before {
+      border-radius: $border-radius-2 !important;
+      background: $black-4 !important;
+    }
+  }
+}

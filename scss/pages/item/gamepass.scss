@@ -1,0 +1,57 @@
+@import "../../values";
+
+.section-content {
+  padding: $padding;
+  border-radius: $border-radius-1;
+  background: $black-5;
+
+  .item-name-container {
+    padding: calc($padding);
+    border-radius: $border-radius-2;
+    background: $black-4;
+
+    border: none;
+
+    width: calc(100% - 420px - $padding);
+    margin-right: 0;
+  }
+
+  .item-thumbnail-container {
+    margin-right: $padding;
+
+    .asset-thumb-container {
+      background: $black-4;
+      border-radius: $border-radius-2;
+
+      .related-asset-container {
+        padding: calc($padding / 2);
+        border-radius: 0 0 $border-radius-2 $border-radius-2;
+
+        & > * {
+          margin: 0;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  .item-details {
+    width: calc(100% - 420px - $padding);
+
+    padding: $padding;
+    border-radius: $border-radius-2;
+    background: $black-4;
+    height: max-content;
+  }
+
+  #item-context-menu {
+    button {
+      top: calc(12px + $padding) !important;
+      right: calc(12px + $padding) !important;
+    }
+  }
+
+  .item-social-container {
+    float: right;
+  }
+}

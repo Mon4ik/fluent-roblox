@@ -28,8 +28,12 @@ body:has(.catalog-container) {
   @import "pages/catalog";
 }
 
-body:has(#item-container) {
-  @import "pages/catalog-item";
+body:has(#item-container.library-item) {
+  @import "pages/item/gamepass";
+}
+
+body:has(#item-container[data-item-type="Asset"]) {
+  @import "pages/item/catalog";
 }
 
 @import "pages/game-card/main";
