@@ -6,29 +6,65 @@ ul.menu-vertical {
   background: transparent !important;
   border-radius: $border-radius-2;
   overflow: hidden;
-}
 
-ul.menu-vertical .active {
-  background: $black-6 !important;
-}
+  .menu-option-content {
+    box-shadow: none !important;
+    background: $black-5;
 
-ul.menu-vertical .menu-option-content {
-  box-shadow: none !important;
-  background: $black-5;
-}
+    &.active {
+      background: $black-6 !important;
+    }
 
-ul.menu-vertical .menu-option:hover {
-  background-color: $black-6 !important;
-  box-shadow: none !important;
+    &:hover {
+      background-color: $black-6 !important;
+      box-shadow: none !important;
+    }
+  }
 }
 
 .tab-content.rbx-tab-content {
   padding: $padding;
+  border-radius: $border-radius-1 !important;
+  background-color: $black-5;
 
-  background-color: #2b2d2f;
-  border-radius: 16px;
+  .tab-pane > div {
+    display: flex;
+    flex-direction: column;
+
+    gap: $padding;
+  }
 }
 
-.section-content {
-  margin-bottom: 0;
+.tab-pane > div > .setting-section,
+.tab-pane .section {
+  padding: $padding;
+  border-radius: $border-radius-2;
+  background-color: $black-4;
+
+  .container-header {
+    margin: 0 0 calc($padding / 4);
+  }
+}
+
+.tab-pane .section {
+  display: flex;
+  flex-direction: column;
+  gap: calc($padding / 4) !important;
+
+  .section-content {
+    margin: 0;
+
+    padding: $padding;
+    border-radius: $border-radius-3;
+    background-color: $black-5 !important;
+  }
+}
+
+.setting-section .section-content,
+.setting-section .remove-panel:not(:has(.section-content)):not(:empty) {
+  margin: 0;
+
+  padding: $padding;
+  border-radius: $border-radius-3;
+  background-color: $black-5 !important;
 }

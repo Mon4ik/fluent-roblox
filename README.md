@@ -30,6 +30,7 @@ Perfect UI for Roblox
 
 ## TODO
 
+- [X] Settings
 - [ ] My Avatar
 - [ ] Inventory page
 - [ ] Messages page
