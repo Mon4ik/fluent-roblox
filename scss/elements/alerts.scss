@@ -7,7 +7,17 @@
   background: rgba($black-6, 80%) !important;
 
   .modal-header {
+    background: rgba($black-4, 60%) !important;
+    border-bottom: none !important;
+    border-radius: $border-radius-1 $border-radius-1 0 0 !important;
+
+    height: unset !important;
     padding: $padding !important;
+
+    .close:hover {
+      background: $black-7;
+      border-radius: $border-radius-3 !important;
+    }
   }
 
   .modal-body {
@@ -17,22 +27,28 @@
   .modal-footer {
     margin: 0 !important;
     padding: 0 $padding $padding !important;
+  }
 
-    .modal-buttons {
-      &::before, &::after {
-        display: none
-      }
+  .modal-footer .modal-buttons,
+  .modal-footer-2-button > div {
+    &::before, &::after {
+      display: none
+    }
 
-      margin: 0;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
-      gap: $padding;
+    gap: $padding;
 
-      button {
-        margin: 0 !important;
-        border-radius: $border-radius-3 !important;
-      }
+    button {
+      margin: 0 !important;
+      border-radius: $border-radius-3 !important;
     }
   }
+}
+
+// why there's no "!!important" to make property very important??
+.rbx-subscription-modal .modal-dialog .modal-content .modal-footer-2-button {
+  height: unset !important;
 }

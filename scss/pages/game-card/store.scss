@@ -1,16 +1,73 @@
 /* === Store === */
 #store {
   padding: 0;
+  gap: calc($padding / 2) !important;
 }
 
+#store #rbx-game-passes,
 #store #rbx-subscriptions-container {
-  display: none;
-}
-
-#store #rbx-game-passes {
   padding: $padding;
   background: $black-5;
   border-radius: $border-radius-1;
+}
+
+#store #rbx-subscriptions-container {
+  &:empty {
+    display: none;
+  }
+
+  #rbx-subscriptions-container-content {
+    margin: 0
+  }
+
+  .card-spacing-bottom {
+    margin: 0;
+  }
+}
+
+.subscription-card-item {
+  padding: $padding;
+  border-radius: $border-radius-2;
+
+  gap: $padding;
+  height: unset;
+
+  .subscription-fc {
+    position: relative;
+
+    .subscription-options-container {
+      position: absolute;
+      right: 0;
+
+      button {
+        margin-top: calc($padding / 2) !important;
+        margin-right: calc($padding / 2) !important;
+      }
+    }
+
+    .subscription-thumbnail-container {
+      min-width: calc(150px + $padding);
+      min-height: calc(150px + $padding);
+
+      .subscription-thumbnail-container-class {
+        width: calc(150px + $padding) !important;
+        height: calc(150px + $padding) !important;
+      }
+    }
+
+    .subscription-information {
+      flex-grow: 1;
+
+      margin-left: $padding;
+      padding: $padding;
+      background: $black-4;
+      border-radius: $border-radius-2;
+    }
+  }
+
+  .subscription-buy-button {
+    border-radius: $border-radius-3 !important;
+  }
 }
 
 #store .store-cards {

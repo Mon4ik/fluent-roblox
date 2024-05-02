@@ -22,3 +22,17 @@ Perfect UI for Roblox
   ```css
   @import url("https://fluent-roblox.idkncc.ru/main.css?v=1.0.1");
   ```
+
+> [!WARNING]
+>
+> Stylesheet probably doesn't quite right working with roblox extensions.
+> Also it doesn't support light theme
+
+## TODO
+
+- [ ] My Avatar
+- [ ] Inventory page
+- [ ] Messages page
+- [ ] Trade page
+- [ ] Group page
+- [ ] Buy robux page

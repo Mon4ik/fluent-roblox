@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+#running-game-instances-container {
+  gap: calc($padding / (4 * 4)) !important;
+}
+
 #game-instances .play-with-others-text {
   display: none;
 }

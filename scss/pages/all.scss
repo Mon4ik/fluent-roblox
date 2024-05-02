@@ -16,13 +16,15 @@
   display: none;
 }
 
-.avatar-card-fullbody .avatar-card-image,
-.avatar-card-fullbody .avatar-card-link,
-.avatar .avatar-card-image,
-.avatar .avatar-card-link {
-  border: none;
-  border-radius: $border-radius-2 !important;
+.avatar, .avatar-card-fullbody {
+  .avatar-card-image,
+  .avatar-card-link,
+  .avatar-icon-container {
+    border: none;
+    border-radius: $border-radius-2 !important;
+  }
 }
+
 
 #game-detail-page {
   margin-top: 1rem;

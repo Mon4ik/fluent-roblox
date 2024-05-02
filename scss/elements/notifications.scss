@@ -17,3 +17,28 @@
 .rbx-header .rbx-navbar-right .popover-content {
   right: -37px !important;
 }
+
+.sendr-notification-background {
+  border-radius: $border-radius-2 !important;
+}
+
+.legacy-notif-base {
+  padding: calc($padding / 2);
+
+  .avatar {
+    .avatar-card-image,
+    .avatar-card-link,
+    .avatar-icon-container {
+      border: none;
+      border-radius: $border-radius-3 !important;
+    }
+  }
+
+  .button-row-container {
+    gap: calc($padding / 4);
+
+    button {
+      border-radius: $border-radius-3 !important;
+    }
+  }
+}
