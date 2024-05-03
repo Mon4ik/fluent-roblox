@@ -1,3 +1,5 @@
+@use "sass:math";
+
 $black-1: #0a0b0b;
 $black-2: #191b1d;
 $black-3: #1e2022;
@@ -9,6 +11,8 @@ $black-7: #656668;
 $blue: #00a2ff;
 
 $padding: calc(1.2rem);
-$border-radius-3: 8px;
-$border-radius-2: calc($padding + $border-radius-3 - 10px);
-$border-radius-1: calc($padding + $border-radius-2 - 10px);
+$header-height: 70px;
+
+$border-radius-3: 0.5rem;
+$border-radius-2: $padding + $border-radius-3 - 0.6rem;
+$border-radius-1: $padding + $border-radius-2 - 0.6rem;

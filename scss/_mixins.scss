@@ -1,0 +1,6 @@
+%no-pseudo {
+  &::before,
+  &::after {
+    display: none !important;
+  }
+}

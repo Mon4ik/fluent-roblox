@@ -131,14 +131,3 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
-
-.thumbnail-holder .btn-control {
-  color: white;
-  aspect-ratio: 1/1;
-  width: 38px;
-  height: 38px;
-
-  border: none;
-  border-radius: $border-radius-3;
-  background: $black-4;
-}

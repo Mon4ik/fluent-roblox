@@ -24,6 +24,10 @@ body:has(.home-container) {
   @import "pages/profile";
 }
 
+#avatar-container {
+  @import "pages/my-avatar";
+}
+
 body:has(.catalog-container) {
   @import "pages/catalog";
 }

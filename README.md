@@ -31,7 +31,7 @@ Perfect UI for Roblox
 ## TODO
 
 - [X] Settings
-- [ ] My Avatar
+- [X] My Avatar
 - [ ] Inventory page
 - [ ] Messages page
 - [ ] Trade page
