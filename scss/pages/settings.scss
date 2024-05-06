@@ -2,26 +2,6 @@
 
 /* Settings */
 
-ul.menu-vertical {
-  background: transparent !important;
-  border-radius: $border-radius-2;
-  overflow: hidden;
-
-  .menu-option-content {
-    box-shadow: none !important;
-    background: $black-5;
-
-    &.active {
-      background: $black-6 !important;
-    }
-
-    &:hover {
-      background-color: $black-6 !important;
-      box-shadow: none !important;
-    }
-  }
-}
-
 .tab-content.rbx-tab-content {
   padding: $padding;
   border-radius: $border-radius-1 !important;

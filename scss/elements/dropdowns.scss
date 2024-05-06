@@ -1,10 +1,14 @@
 @import "../values";
 
-.popover {
+%popover-style {
   border-radius: $border-radius-2 !important;
   height: fit-content;
   backdrop-filter: blur(18px);
   background-color: rgba(62, 64, 67, .2) !important;
+}
+
+.popover {
+  @extend %popover-style;
 
   .popover-content > div {
     background: transparent !important;
@@ -15,18 +19,31 @@
   }
 }
 
+div[role="tooltip"] {
+  @extend %popover-style;
+
+  .tooltip-inner {
+    background: transparent !important;
+  }
+
+  .tooltip-arrow {
+    border-bottom-color: rgba($black-7, .8) !important;
+    margin-top: -4px;
+  }
+}
+
 .dropdown-menu {
   border-radius: $border-radius-2 !important;
   height: fit-content;
-  backdrop-filter: blur(12px);
-  background-color: rgba($black-4, .8) !important;
+  backdrop-filter: blur(8px);
+  background-color: rgba($black-4, .7) !important;
 }
 
 .input-group-btn:has(.dropdown-menu) {
   .dropdown-menu {
-    margin-top: 8px;
-    width: 50%;
-    left: auto !important;
-    right: 38px !important;
+    //margin-top: 8px;
+    //width: 50%;
+    //left: auto !important;
+    //right: 38px !important;
   }
 }

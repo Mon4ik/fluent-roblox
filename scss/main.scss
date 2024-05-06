@@ -2,15 +2,23 @@
 
 @import "pages/all";
 
+// Region: Elements
+
+@import "elements/vertical-menu";
 @import "elements/dropdowns";
 @import "elements/tabs";
 @import "elements/alerts";
 @import "elements/notifications";
-@import "elements/chat";
 @import "elements/header";
 @import "elements/sidebar";
-
 @import "elements/shopping-cart";
+
+#chat-container {
+  @import "elements/chat";
+}
+
+
+// Region: Pages
 
 body:has(.home-container) {
   @import "pages/home";
@@ -22,6 +30,10 @@ body:has(.home-container) {
 
 .profile-container {
   @import "pages/profile";
+}
+
+#inventory-container {
+  @import "pages/inventory";
 }
 
 #avatar-container {

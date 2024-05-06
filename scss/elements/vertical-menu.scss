@@ -1,0 +1,70 @@
+@import "../values";
+
+ul.menu-vertical {
+  background: transparent !important;
+
+  .menu-option {
+    &:only-child .menu-option-content {
+      border-radius: $border-radius-2 !important;
+    }
+
+    &:first-child .menu-option-content {
+      border-radius: $border-radius-2 $border-radius-2 0 0;
+    }
+
+    &:last-child .menu-option-content {
+      border-radius: 0 0 $border-radius-2 $border-radius-2;
+    }
+
+    &.active .menu-option-content {
+      background: $black-6 !important;
+    }
+
+    &:hover,
+    &.active {
+      box-shadow: none !important;
+    }
+  }
+
+  .menu-option-content {
+    box-shadow: none !important;
+    background: $black-5;
+
+    &.active {
+      background: $black-6 !important;
+    }
+
+    &:hover {
+      background-color: $black-6 !important;
+      box-shadow: none !important;
+    }
+  }
+
+  ul.menu-secondary {
+    border-radius: $border-radius-2;
+    backdrop-filter: blur(8px);
+    background: rgba($black-5, 80%) !important;
+    box-shadow: 0 0 $padding rgba($black-1, 0.25) !important;
+
+    .menu-secondary-option {
+      &:only-child {
+        border-radius: $border-radius-2 !important;
+      }
+
+      &:first-child {
+        border-radius: $border-radius-2 $border-radius-2 0 0;
+      }
+
+      &:last-child {
+        border-radius: 0 0 $border-radius-2 $border-radius-2;
+      }
+
+
+      &:hover {
+        //background: $black-6;
+      }
+    }
+
+
+  }
+}

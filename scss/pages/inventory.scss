@@ -1,0 +1,49 @@
+@use "sass:math";
+@import "../values";
+
+.assets-explorer-main-content .tab-content-group {
+  display: flex;
+  justify-items: center;
+
+  .category-tabs {
+  }
+
+  & > .tab-content {
+    position: relative;
+    margin-top: 38px;
+
+    padding: math.div($padding, 2);
+    border-radius: $border-radius-2;
+    background: $black-5;
+
+    .container-header {
+      position: absolute;
+      top: -35px;
+      width: 100%;
+    }
+
+    .current-items {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+
+      .item-cards {
+        flex-grow: 1;
+
+        .item-card-thumb-container::before {
+          border-radius: $border-radius-3 !important;
+        }
+      }
+
+      .pager-holder {
+        padding: math.div($padding, 2);
+        border-radius: $border-radius-3;
+        background: $black-4;
+
+        .pager {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

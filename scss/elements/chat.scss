@@ -1,21 +1,124 @@
-.chat-main {
-  backdrop-filter: blur(18px);
-  background-color: rgba(57, 59, 61, .6) !important;
+@use "sass:math";
+@import "../values";
 
-  overflow: hidden;
+%base-chat-styles {
+  backdrop-filter: blur(8px);
+  background-color: rgba($black-5, .5) !important;
+
   border-radius: $border-radius-2 $border-radius-2 0 0;
-  box-shadow: none;
+  box-shadow: 0 0 1rem rgba($black-1, .2) !important;
 }
+
+.mCSB_inside {
+  div.mCSB_container {
+    margin-right: 0 !important;
+  }
+
+  div.mCSB_dragger_bar {
+    background: $black-5;
+  }
+}
+
+$chat-body-margin: 8px;
+
+.chat-main {
+  @extend %base-chat-styles;
+
+  .chat-header {
+    border-radius: $border-radius-2 $border-radius-2 0 0;
+  }
+
+  .chat-body {
+
+    .chat-search {
+      border-radius: $border-radius-3 !important;
+      margin: $chat-body-margin !important;
+    }
+
+    .chat-friend-list {
+      .chat-friends {
+        padding: 0 $chat-body-margin !important;
+        padding-right: $chat-body-margin * 2 !important;
+        padding-bottom: $chat-body-margin * 4 !important;
+
+        display: flex;
+        flex-direction: column;
+        gap: math.div($chat-body-margin, 2);
+
+        li {
+          background: rgba($black-6, .75) !important;
+
+          &, .chat-friend-container {
+            border-radius: $border-radius-3 !important;
+          }
+
+          .border-bottom {
+            border: none !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+.dialog-container {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.dialog-main {
+  @extend %base-chat-styles;
+
+  .dialog-header {
+    border-radius: $border-radius-2 $border-radius-2 0 0;
+  }
+
+  .dialog-messages {
+    padding-right: $chat-body-margin * 2 !important;
+  }
+
+  .dialog-input-container {
+    border-radius: 0 !important;
+  }
+}
+
+.details-dialog {
+  @extend %base-chat-styles;
+  background: transparent !important;
+
+  .chat-windows-header {
+    border-radius: $border-radius-2 $border-radius-2 0 0;
+  }
+
+  .details-container {
+    background: transparent !important;
+  }
+
+  .mCSB_container {
+    padding: $chat-body-margin;
+    padding-right: $chat-body-margin * 2 !important;
+
+    .details-members-label {
+      border: none !important;
+      color: #fff !important;
+    }
+
+    .details-members-container {
+      overflow: hidden;
+      border-radius: $border-radius-3 !important;
+
+      .add-friends-option:hover {
+        background: $black-7 !important;
+      }
+
+      .border-bottom {
+        border: none !important;
+      }
+    }
+  }
+}
+
 
 .chat-search-input:focus {
   outline: none;
-}
-
-.chat-search {
-  margin: 8px;
-}
-
-.chat-friends li {
-  backdrop-filter: blur(18px);
-  background-color: rgba(45, 47, 49, .2) !important;
 }
