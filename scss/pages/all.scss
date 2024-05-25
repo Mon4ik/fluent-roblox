@@ -1,6 +1,6 @@
 @import "../values";
 
-.abp, .rbx-the-hunt-container, .profile-ads-container {
+.abp, .profile-ads-container {
   display: none;
 }
 
@@ -8,13 +8,26 @@
   display: none;
 }
 
-.game-home-page-container div > .game-sort-header-container ~ .game-sort-header-container {
-  display: none;
+.game-home-page-container > div {
+  display: flex;
+  flex-direction: column;
+
+  .friend-carousel-container {
+    order: -5;
+  }
+
+  .game-sort-header-container:nth-child(5) {
+    order: -3;
+  }
+
+  .game-carousel:nth-child(6) {
+    order: -2;
+  }
 }
 
-.game-home-page-container div .wide-game-tile-carousel:has(li.event-tile) {
-  display: none;
-}
+//.game-home-page-container div > .game-sort-header-container ~ .game-sort-header-container {
+//  display: none;
+//}
 
 .avatar, .avatar-card-fullbody {
   .avatar-card-image,
