@@ -2,7 +2,7 @@
 
 Perfect UI for BTRoblox
 
-> ![NOTE]
+> [!NOTE]
 >
 > This is branch with BTRoblox Extension support
 >
