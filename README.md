@@ -1,8 +1,12 @@
 # Fluent Roblox
 
-Perfect UI for Roblox
+Perfect UI for BTRoblox
 
-> TODO: better images
+> ![NOTE]
+>
+> This is branch with BTRoblox Extension support
+>
+> Probably I will have two different branches for Vanilla Website and w/ BTRoblox extension Website
 
 ![home page](docs/image1.png)
 ![game page](docs/image2.png)
